@@ -26,11 +26,11 @@
 
   <script>
     function calculateSum() {
-      var slider1Value = parseInt(document.getElementById('slider1').value);
-      var slider2Value = parseInt(document.getElementById('slider2').value);
+      var slider1Value = document.getElementById('slider1').value;
+      var slider2Value = document.getElementById('slider2').value;
 
       // USER CODE Begins 
-      var result = slider1Value + slider2Value;
+      var result = parseInt(slider1Value) + parseInt(slider2Value);
 	  // USER CODE Ends
 
       document.getElementById('sumDisplay').value = result;
