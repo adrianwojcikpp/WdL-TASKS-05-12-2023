@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Random Integer Generator</title>
+</head>
+<body>
+
+  <h2>Random Integer Generator</h2>
+
+  <form>
+    <label for="slider1">Slider 1:</label>
+    <input type="range" id="slider1" name="slider1" min="0" max="100" value="50">
+    <br><br>
+    <label for="slider2">Slider 2:</label>
+    <input type="range" id="slider2" name="slider2" min="0" max="100" value="50">
+    <br><br>
+    <button type="button" onclick="calculateSum()">Calculate Sum</button>
+  </form>
+
+  <br>
+
+  <div>
+    <label for="sumDisplay">Sum of Slider Values:</label>
+    <textarea id="sumDisplay" rows="1" cols="50" readonly></textarea>
+  </div>
+
+  <script>
+    function calculateSum() {
+      var slider1Value = parseInt(document.getElementById('slider1').value);
+      var slider2Value = parseInt(document.getElementById('slider2').value);
+
+      // USER CODE Begins 
+      var result = slider1Value + slider2Value;
+	  // USER CODE Ends
+
+      document.getElementById('sumDisplay').value = result;
+    }
+  </script>
+
+</body>
+</html>
