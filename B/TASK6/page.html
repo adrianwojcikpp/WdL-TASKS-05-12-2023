@@ -14,7 +14,7 @@
     <label for="slider2">Slider 2:</label>
     <input type="range" id="slider2" name="slider2" min="0" max="100" value="50">
     <br><br>
-    <button type="button" onclick="calculateSum()">Calculate Sum</button>
+    <button type="button" onclick="fetchRandomNumber()">Fetch Random Number</button>
   </form>
 
   <br>
@@ -25,7 +25,7 @@
   </div>
 
   <script>
-    function calculateSum() {
+    async function fetchRandomNumber() {
       var slider1Value = document.getElementById('slider1').value;
       var slider2Value = document.getElementById('slider2').value;
 
